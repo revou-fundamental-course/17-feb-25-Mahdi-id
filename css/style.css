@@ -135,24 +135,27 @@ table {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  border-bottom: 1px solid;
+  border-bottom: 3px solid #626f47;
   justify-content: space-between;
   align-items: center;
+  color: #626f47;
+  box-sizing: border-box;
 }
 .container-logo > img {
-  width: 60px;
+  width: 50px;
 }
 
 .container-navbar > a {
   text-decoration: none;
   font-size: 18px;
-  color: black;
+  color: #626f47;
 }
 
 nav > a {
   border: 1px solid;
   padding: 10px 15px;
   background-color: white;
+  font-weight: 500;
 }
 
 .container-header nav > .navbar-our-packages {
@@ -173,14 +176,14 @@ nav > a {
   margin-top: 60px;
   font-weight: bold;
   font-size: 50px;
-  color: #ccc8aa;
+  color: #626f47;
 }
 
 .container-main .container-hero h4 {
   font-size: 30px;
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
-  color: #7d7c7c;
+  color: #a4b465;
 }
 
 .container-content-utama {
@@ -190,7 +193,6 @@ nav > a {
 }
 
 .container-content {
-  border: 1px solid grey;
   padding-left: 40px;
   width: 60%;
 }
@@ -207,20 +209,164 @@ nav > a {
   margin-top: 15px;
   font-size: 20px;
   text-indent: 40px;
+  color: #3c3d37;
 }
 
-.content-profile {
+.content-profil {
   display: flex;
+  margin-top: 15px;
+  align-items: center;
+  margin-left: 40px;
 }
 
-.container-content .content-profil .image-profil {
-  width: 20px;
+.image-profil > img {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
-.container-contact-us {
-  border: 1px solid grey;
-  width: 40%;
+.content-profil .data-profil {
+  justify-content: flex-end;
+  line-height: 25px;
+  color: #3c3d37;
 }
+.data-profil > h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.data-profil > p {
+  font-style: italic;
+}
+.content-service {
+  display: flex;
+}
+.content-benefit > h1 {
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #626f47;
+}
+
+.content-service .service-icon {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: auto;
+  margin: 0 5px;
+  padding: 20px 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background-color: #626f47;
+  color: white;
+  line-height: 20px;
+}
+
+.icon img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.icon > h1 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.icon > p {
+  margin-top: 10px;
+  font-weight: 100;
+}
+.container-contact-us {
+  width: 40%;
+  padding: 0 40px;
+  display: flex;
+}
+
+.header-contac-us h1 {
+  padding: 60px 0px 0px 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #626f47;
+}
+
+.header-contac-us p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  color: #3c3d37;
+}
+
+.form-contact-us form {
+  display: flex;
+  flex-direction: column; /* Elemen form bertumpuk ke bawah */
+}
+
+.form-contact-us label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #3c3d37;
+}
+
+.form-contact-us input[type="text"],
+.form-contact-us input[type="email"] {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #3c3d37; 
+  border-radius: 5px; 
+  font-size: 14px;
+  outline: none; 
+  transition: border 0.2s; 
+}
+
+.form-contact-us input[type="text"]:focus,
+.form-contact-us input[type="email"]:focus {
+  border-color: #a4b465; 
+}
+
+
+.form-contact-us select {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #3c3d37;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-contact-us select:focus {
+  border-color: #a4b465;
+  
+}
+
+/* Tombol Submit */
+.form-contact-us input[type="submit"] {
+  background-color: #626f47; /* Warna latar tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-contact-us input[type="submit"]:hover {
+  background-color: #333333; /* Warna tombol saat hover */
+}
+
