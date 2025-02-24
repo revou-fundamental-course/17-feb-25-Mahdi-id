@@ -3,34 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Websiteku</title>
+    <title>MyTravel</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/logoku.png" />
     <script></script>
   </head>
   <body>
     <header class="container-header">
       <div class="container-logo">
-        <img src="assets/logo-hitam.png" alt="logoku" />
+        <img src="assets/logo-putih.png" alt="logoku" />
       </div>
       <nav class="container-navbar">
-        <a class="navbar-home" href="#">Home</a>
-        <a class="navbar-our-packages" href="#">Our Packages</a>
-        <a class="navbar-call-us" href="#">Call Us</a>
+        <a class="navbar-home" href="#home">Home</a>
+        <a class="navbar-our-packages" href="#our-packages">Our Packages</a>
+        <a class="navbar-call-us" href="#call-us">Call Us</a>
       </nav>
     </header>
     <main class="container-main">
-      <div class="container-hero">
+      <div class="container-hero" id="home">
         <h1 class="container-heroh1">You Trusted Travel Agent's</h1>
         <h4>Your happinesss is our happiness</h4>
       </div>
       <div class="container-content-utama">
         <article class="container-content">
           <section class="content-image">
-            <img
-              class="image-autoslide"
-              src="assets/bedugul.jpg"
-              alt="Bedugul"
-            />
+            <div class="slider">
+              <div class="slides">
+                <img src="assets/bedugul.jpg" alt="Bedugul"/>
+                <img src="assets/beach.jpg" alt="beach" />
+                <img src="assets/waterfall.jpg" alt="waterfall" />
+              </div>
+            </div>
+
             <p class="keterangan">
               "Liburan jadi menyenangkan bersama Travel Agentku."
             </p>
@@ -84,7 +88,7 @@
               </p>
             </div>
             <div class="form-contact-us">
-              <form action="">
+              <form action="" id="myForm">
                 <label for="Name">Your Name:</label>
                 <input
                   type="text"
@@ -96,6 +100,7 @@
                 <input
                   type="email"
                   id="Email"
+                  name="Email"
                   placeholder="example@email.com"
                 />
                 <label for="Interested">What are you Interested in?</label>
@@ -126,18 +131,119 @@
                     <option value="custom">Customized Itinerary</option>
                   </optgroup>
                 </select>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" />
               </form>
             </div>
           </article>
         </aside>
       </div>
-      <div class="container-our-packages">
-        <h1>Our Packages</h1>
-        
-      </div>
+      <article class="container-our-packages" id="our-packages">
+        <div class="header-our-packages">
+          <h1>Our Packages</h1>
+        </div>
+
+        <div class="container-wisata">
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="assets/lamp.png" alt="icon-lamp" />
+            </div>
+            <div class="feature-text">
+              <h3>Bali</h3>
+              <p>
+                Nikmati keindahan pantai, budaya yang kaya, dan kuliner khas di
+                Pulau Dewata.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="assets/lamp.png" alt="icon-lamp" />
+            </div>
+            <div class="feature-text">
+              <h3>Japan</h3>
+              <p>
+                Jelajahi perpaduan tradisi dan modernitas dengan pemandangan
+                indah serta kuliner lezat.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="assets/lamp.png" alt="icon-lamp" />
+            </div>
+            <div class="feature-text">
+              <h3>Singapore</h3>
+              <p>
+                Destinasi urban yang menawarkan atraksi ikonik, belanja, dan
+                beragam cita rasa kuliner.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="assets/Star.png" alt="iconstar" />
+            </div>
+            <div class="feature-text">
+              <h3>Bandung</h3>
+              <p>
+                Nikmati udara sejuk, wisata alam, dan kuliner khas di Kota
+                Kembang.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="assets/Star.png" alt="iconstar" />
+            </div>
+            <div class="feature-text">
+              <h3>Surabaya</h3>
+              <p>
+                Kota bersejarah dengan destinasi modern, kuliner lezat, dan
+                pusat perbelanjaan.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="assets/Star.png" alt="iconstar" />
+            </div>
+            <div class="feature-text">
+              <h3>Semarang</h3>
+              <p>
+                Jelajahi kota kaya budaya dengan landmark ikonik, wisata
+                kuliner, dan pesona kota lama.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="container-action" id="call-us">
+        <div class="header-action">
+          <h1>Call Us</h1>
+        </div>
+        <div class="content-action">
+          <h1>Ready to Elevate Your Travel Experience?</h1>
+          <p>
+            With our curated itineraries and top-notch accommodations, your next
+            trip is guaranteed to be unforgettable. Don’t let your dream
+            vacation wait
+          </p>
+          <p class="italic">start planning now!</p>
+          <button>Order Now</button>
+        </div>
+      </article>
     </main>
 
-    <footer></footer>
+    <footer>
+      <img src="assets/logo-putih.png" alt="logoku" />
+      <h1>Made by Mahdi</h1>
+      <p>Revou Software Engineer 17 Februari 2025</p>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
