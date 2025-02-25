@@ -509,34 +509,25 @@ footer p {
 }
 
 /*Dekstop*/
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .container-logo img {
-    width: 45px;
+    width: 40px;
   }
-
   nav > a {
-    font-size: 15px;
+    font-size: 14px;
   }
-
   .container-main .container-hero > .container-heroh1 {
-    margin-top: 160px;
     font-size: 45px;
   }
 
   .container-main .container-hero h4 {
-    font-size: 25px;
-    margin-top: 28px;
+    font-size: 28px;
+    margin-top: 18px;
   }
-
-  .container-content-utama {
-    gap: 0;
-  }
-
   .keterangan {
     font-size: 18px;
     text-indent: 20px;
   }
-
   .content-profil {
     margin-left: 20px;
   }
@@ -546,257 +537,146 @@ footer p {
     height: 50px;
   }
 
-  .data-profil > h1 {
-    font-weight: 700;
+  .content-profil .data-profil {
+    line-height: 23px;
   }
-
+  .data-profil > h1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
   .content-service {
     display: grid;
   }
   .content-benefit > h1 {
     margin-left: 20px;
     margin-top: 30px;
-    margin-bottom: 28px;
+    margin-bottom: 35px;
   }
 
   .icon {
-    margin: 10px 0;
-    border-radius: 20px;
-    line-height: 15px;
-  }
-
-  .icon img {
-    width: 50px;
-  }
-
-  .icon > h1 {
-    font-weight: 600;
-  }
-
-  .icon > p {
-    font-weight: 300;
-  }
-
-  .header-contac-us h1 {
-    padding: 50px 0px 0px;
-  }
-
-  .header-contac-us p {
-    font-size: 15px;
-  }
-
-  .feature-item {
-    width: 100%;
-  }
-
-  .container-our-packages {
-    padding-top: 35px;
-  }
-
-  .header-our-packages h1,
-  .header-action h1 {
-    font-size: 35px;
-    margin: 140px 0 75px;
-  }
-
-  .container-wisata {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 40px;
-    padding: 20px;
-  }
-
-  .icon-circle {
-    width: 38px;
-    height: 38px;
-  }
-
-  .feature-text h3 {
-    font-size: 25px;
+    width: auto;
     margin-bottom: 15px;
-    margin-top: 8px;
-  }
-
-  .feature-text p {
-    font-size: 17px;
-    line-height: 1.5;
-  }
-
-  .content-action {
-    margin-top: -50px;
+    line-height: 18px;
   }
 
   .content-action h1 {
-    padding-top: 30px;
-    font-size: 33px;
-    margin-bottom: 15px;
+    font-size: 35px;
   }
 
   .content-action p {
     width: 68%;
-    font-weight: 500;
-    text-align: center;
-    line-height: 28px;
   }
-  .content-action .italic {
-    margin-bottom: 18px;
-  }
-
   button {
-    border-radius: 5px;
-    padding: 10px 50px;
-    font-size: 18px;
+    padding: 14px 45px;
+    font-size: 20px;
+    font-weight: 600;
   }
+}
 
-  footer {
-    margin-top: 10px;
-    background-image: linear-gradient(#626f47, #3c3d37);
-    padding: 40px;
-  }
-
-  footer img {
-    width: 65px;
-    margin-bottom: 18px;
-  }
-
-  footer h1 {
-    font-weight: 400;
-    font-size: 18px;
-  }
-} */
-
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .container-logo img {
-    width: 40px;
+    width: 30px;
+  }
+
+  nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 84px;
+    width: 100%;
+    background-color: #626f47;
+    transform-origin: top;
+    max-height: 0;
+    overflow-y: hidden;
+  }
+
+  nav a {
+    border: none;
+    background-color: transparent;
   }
 
   nav > a {
     font-size: 13px;
   }
 
+  nav.active {
+    max-height: 350px;
+    transition: max-height 0.3s ease;
+  }
+
+  .hamburger {
+    display: block;
+    max-height: 80%;
+  }
+  .container-header nav > .navbar-our-packages {
+    margin: 0;
+  }
+
   .container-main .container-hero > .container-heroh1 {
+    margin-top: 160px;
     font-size: 40px;
   }
 
   .container-main .container-hero h4 {
-    font-size: 23px;
-    margin-top: 23px;
+    font-size: 25px;
+    margin-top: 20px;
   }
 
-  .keterangan {
-    font-size: 15px;
-    text-indent: 0px;
-    line-height: 20px;
+  .container-content-utama {
+    display: block;
+    gap: 0;
   }
 
-  .content-profil {
-    margin-left: 0px;
-  }
-
-  .image-profil > img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .data-profil > h1 {
-    font-weight: 700;
-    font-size: 18px;
+  .container-content {
+    padding-left: 40px;
+    width: 100%;
   }
 
   .content-benefit > h1 {
-    margin-left: 0px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 25px;
-  }
-
-  .icon {
-    line-height: 18px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 28px;
   }
 
   .icon img {
     width: 45px;
   }
 
-  .icon > h1 {
-    font-size: 15px;
-  }
-
-  .icon > p {
-    font-size: 15px;
-  }
-
-  .header-contac-us h1 {
-    padding: 35px 0px 0px;
-  }
-
-  .header-contac-us p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .header-our-packages h1,
-  .header-action h1 {
-    font-size: 30px;
-  }
-
-  .container-wisata {
-    gap: 30px 20px;
-  }
-
-  .feature-text h3 {
-    font-size: 23px;
-    margin-bottom: 10px;
-  }
-
-  .feature-text p {
-    font-size: 15px;
-    line-height: 1.5;
+  .container-contact-us {
+    width: 100%;
+    display: block;
   }
 
   .content-action {
-    padding-top: 80px;
+    margin-bottom: 60px;
   }
 
   .content-action h1 {
-    padding-top: 1px;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 33px;
   }
 
   .content-action p {
-    width: 83%;
-    font-weight: 500;
-    line-height: 22px;
-    font-size: 15px;
-  }
-  .content-action .italic {
-    margin-bottom: 25px;
+    width: 80%;
   }
 
   button {
-    border-radius: 5px;
-    padding: 8px 40px;
-    font-size: 15px;
-  }
-
-  footer {
-    margin-top: 10px;
-    background-image: linear-gradient(#626f47, #3c3d37);
-    padding: 40px;
+    padding: 10px 45px;
+    font-size: 18px;
   }
 
   footer img {
     width: 50px;
-    margin-bottom: 13px;
   }
 
   footer h1 {
     font-size: 15px;
   }
+
   footer p {
     font-size: 12px;
   }
-} */
+}
 
 @media (max-width: 640px) {
   .container-header {
@@ -804,16 +684,11 @@ footer p {
   }
 
   .container-logo img {
-    width: 30px;
+    width: 20px;
   }
 
-  nav > a {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    max-height: 80%;
+  nav {
+    top: 44px;
   }
 
   .container-main .container-hero > .container-heroh1 {
@@ -826,12 +701,7 @@ footer p {
     margin-top: 10px;
   }
 
-  .container-content-utama {
-    display: block;
-  }
-
   .container-content {
-    width: 100%;
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -867,10 +737,6 @@ footer p {
   .data-profil > p {
     font-style: italic;
     font-size: 13px;
-  }
-
-  .content-service {
-    display: grid;
   }
 
   .content-benefit > h1 {
@@ -976,13 +842,8 @@ footer p {
     font-size: 15px;
   }
 
-  button:hover {
-    background-color: #3c3d37;
-  }
-
   footer {
     padding: 20px;
-
   }
 
   footer img {

@@ -16,38 +16,42 @@ function showNextSlide() {
 // Panggil fungsi setiap 3 detik
 setInterval(showNextSlide, 3000);
 
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Mencegah submit form secara default
-  
-    // Ambil nilai dari form dan hapus spasi ekstra
-    const name = document.getElementById("Name").value.trim();
-    const email = document.getElementById("Email").value.trim();
-    const interested = document.getElementById("Interested").value;
-  
-    // Validasi: cek apakah field kosong
-    if (name === "" || email === "" || interested === "") {
-      alert("Semua field tidak boleh kosong!");
-      return; // Hentikan proses jika ada field kosong
-    }
-  
-    // Validasi: cek apakah email mengandung karakter '@'
-    if (!email.includes('@')) {
-      alert("Masukkan email yang valid!");
-      return;
-    }
-  
-    // Tampilkan konfirmasi sebelum mengirim data
-    const konfirmasi = confirm("Apakah Anda yakin ingin mengirim data?");
-    if (konfirmasi) {
-      // Jika konfirmasi OK, maka tampilkan pesan berhasil
-      alert("Yeyyy, Datamu berhasil dikirim!");
-  
-      // Refresh halaman setelah data dikirim
-      location.reload();
-    } else {
-      // Jika user batal mengirim, tampilkan pesan pembatalan
-      alert("Yahhh, Pengiriman data dibatalkan :(");
-    }
-  });
+document.getElementById("myForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Mencegah submit form secara default
 
- 
+  // Ambil nilai dari form dan hapus spasi ekstra
+  const name = document.getElementById("Name").value.trim();
+  const email = document.getElementById("Email").value.trim();
+  const interested = document.getElementById("Interested").value;
+
+  // Validasi: cek apakah field kosong
+  if (name === "" || email === "" || interested === "") {
+    alert("Semua field tidak boleh kosong!");
+    return; // Hentikan proses jika ada field kosong
+  }
+
+  // Validasi: cek apakah email mengandung karakter '@'
+  if (!email.includes("@")) {
+    alert("Masukkan email yang valid!");
+    return;
+  }
+
+  // Tampilkan konfirmasi sebelum mengirim data
+  const konfirmasi = confirm("Apakah Anda yakin ingin mengirim data?");
+  if (konfirmasi) {
+    // Jika konfirmasi OK, maka tampilkan pesan berhasil
+    alert("Yeyyy, Datamu berhasil dikirim!");
+
+    // Refresh halaman setelah data dikirim
+    location.reload();
+  } else {
+    // Jika user batal mengirim, tampilkan pesan pembatalan
+    alert("Yahhh, Pengiriman data dibatalkan :(");
+  }
+});
+
+const menuIcon = document.querySelector(".container-navbar");
+const hamburger = document.getElementById("menu");
+hamburger.addEventListener("click", () => {
+  menuIcon.classList.toggle("active");
+});
