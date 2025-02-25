@@ -147,34 +147,28 @@ table {
   box-shadow: 0 5px 30px 0 grey;
 }
 
-.container-logo img{
+.container-logo img {
   width: 50px;
 }
-.slider{
+.slider {
   position: relative;
   width: 100%;
- border-radius: 20px;
+  border-radius: 20px;
   margin: auto;
   overflow: hidden;
 }
 
-.slides{
+.slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-.slides img{
-width: 100%;
-height: 480px;
-flex-shrink: 0;
-object-fit: cover;
-object-position: center;
-}
-
-.container-navbar > a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #ffffff;
+.slides img {
+  width: 100%;
+  height: 480px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 nav > a {
@@ -182,6 +176,14 @@ nav > a {
   padding: 10px 15px;
   background-color: #626f47;
   font-weight: 500;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+.hamburger {
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
 }
 
 .container-header nav > .navbar-our-packages {
@@ -197,7 +199,7 @@ nav > a {
   border-radius: 4px 0 0 4px;
 }
 
-.container-hero{
+.container-hero {
   margin-bottom: 60px;
 }
 
@@ -226,7 +228,6 @@ nav > a {
   padding-left: 40px;
   width: 60%;
 }
-
 
 .keterangan {
   margin-top: 15px;
@@ -389,13 +390,17 @@ nav > a {
   background-color: #333333;
 }
 
+.container-our-packages {
+  padding-top: 5px;
+}
+
 .header-our-packages h1,
 .header-action h1 {
   font-weight: bold;
   font-size: 40px;
   align-content: center;
   text-align: center;
-  margin: 190px 0 75px ;
+  margin: 190px 0 75px;
   color: #626f47;
 }
 
@@ -411,7 +416,7 @@ nav > a {
 .feature-item {
   display: flex;
   gap: 15px;
-  width: 450px;
+  width: 100%;
 }
 
 .icon-circle {
@@ -501,4 +506,495 @@ footer h1 {
 footer p {
   color: #ffffff;
   font-size: 14px;
+}
+
+/*Dekstop*/
+/* @media (max-width: 1024px) {
+  .container-logo img {
+    width: 45px;
+  }
+
+  nav > a {
+    font-size: 15px;
+  }
+
+  .container-main .container-hero > .container-heroh1 {
+    margin-top: 160px;
+    font-size: 45px;
+  }
+
+  .container-main .container-hero h4 {
+    font-size: 25px;
+    margin-top: 28px;
+  }
+
+  .container-content-utama {
+    gap: 0;
+  }
+
+  .keterangan {
+    font-size: 18px;
+    text-indent: 20px;
+  }
+
+  .content-profil {
+    margin-left: 20px;
+  }
+
+  .image-profil > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .data-profil > h1 {
+    font-weight: 700;
+  }
+
+  .content-service {
+    display: grid;
+  }
+  .content-benefit > h1 {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+  }
+
+  .icon {
+    margin: 10px 0;
+    border-radius: 20px;
+    line-height: 15px;
+  }
+
+  .icon img {
+    width: 50px;
+  }
+
+  .icon > h1 {
+    font-weight: 600;
+  }
+
+  .icon > p {
+    font-weight: 300;
+  }
+
+  .header-contac-us h1 {
+    padding: 50px 0px 0px;
+  }
+
+  .header-contac-us p {
+    font-size: 15px;
+  }
+
+  .feature-item {
+    width: 100%;
+  }
+
+  .container-our-packages {
+    padding-top: 35px;
+  }
+
+  .header-our-packages h1,
+  .header-action h1 {
+    font-size: 35px;
+    margin: 140px 0 75px;
+  }
+
+  .container-wisata {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    padding: 20px;
+  }
+
+  .icon-circle {
+    width: 38px;
+    height: 38px;
+  }
+
+  .feature-text h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+  }
+
+  .feature-text p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .content-action {
+    margin-top: -50px;
+  }
+
+  .content-action h1 {
+    padding-top: 30px;
+    font-size: 33px;
+    margin-bottom: 15px;
+  }
+
+  .content-action p {
+    width: 68%;
+    font-weight: 500;
+    text-align: center;
+    line-height: 28px;
+  }
+  .content-action .italic {
+    margin-bottom: 18px;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-size: 18px;
+  }
+
+  footer {
+    margin-top: 10px;
+    background-image: linear-gradient(#626f47, #3c3d37);
+    padding: 40px;
+  }
+
+  footer img {
+    width: 65px;
+    margin-bottom: 18px;
+  }
+
+  footer h1 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  .container-logo img {
+    width: 40px;
+  }
+
+  nav > a {
+    font-size: 13px;
+  }
+
+  .container-main .container-hero > .container-heroh1 {
+    font-size: 40px;
+  }
+
+  .container-main .container-hero h4 {
+    font-size: 23px;
+    margin-top: 23px;
+  }
+
+  .keterangan {
+    font-size: 15px;
+    text-indent: 0px;
+    line-height: 20px;
+  }
+
+  .content-profil {
+    margin-left: 0px;
+  }
+
+  .image-profil > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .data-profil > h1 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .content-benefit > h1 {
+    margin-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .icon {
+    line-height: 18px;
+  }
+
+  .icon img {
+    width: 45px;
+  }
+
+  .icon > h1 {
+    font-size: 15px;
+  }
+
+  .icon > p {
+    font-size: 15px;
+  }
+
+  .header-contac-us h1 {
+    padding: 35px 0px 0px;
+  }
+
+  .header-contac-us p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .header-our-packages h1,
+  .header-action h1 {
+    font-size: 30px;
+  }
+
+  .container-wisata {
+    gap: 30px 20px;
+  }
+
+  .feature-text h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .feature-text p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .content-action {
+    padding-top: 80px;
+  }
+
+  .content-action h1 {
+    padding-top: 1px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .content-action p {
+    width: 83%;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 15px;
+  }
+  .content-action .italic {
+    margin-bottom: 25px;
+  }
+
+  button {
+    border-radius: 5px;
+    padding: 8px 40px;
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 10px;
+    background-image: linear-gradient(#626f47, #3c3d37);
+    padding: 40px;
+  }
+
+  footer img {
+    width: 50px;
+    margin-bottom: 13px;
+  }
+
+  footer h1 {
+    font-size: 15px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+} */
+
+@media (max-width: 640px) {
+  .container-header {
+    padding: 10px 3%;
+  }
+
+  .container-logo img {
+    width: 30px;
+  }
+
+  nav > a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    max-height: 80%;
+  }
+
+  .container-main .container-hero > .container-heroh1 {
+    margin-top: 90px;
+    font-size: 25px;
+  }
+
+  .container-main .container-hero h4 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .container-content-utama {
+    display: block;
+  }
+
+  .container-content {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .slides img {
+    height: 300px;
+  }
+
+  .keterangan {
+    margin-top: 13px;
+    font-size: 13px;
+    text-indent: 10px;
+  }
+
+  .content-profil {
+    margin-left: 3%;
+  }
+
+  .image-profil > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+  }
+
+  .content-profil .data-profil {
+    line-height: 22px;
+  }
+  .data-profil > h1 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .data-profil > p {
+    font-style: italic;
+    font-size: 13px;
+  }
+
+  .content-service {
+    display: grid;
+  }
+
+  .content-benefit > h1 {
+    margin-left: 3%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #626f47;
+  }
+
+  .icon {
+    margin: 5px 0;
+    padding: 15px 8px;
+    border-radius: 10px;
+    background-color: #626f47;
+    color: white;
+    line-height: 18px;
+  }
+
+  .icon img {
+    width: 40px;
+    margin-bottom: 13px;
+  }
+
+  .icon > h1 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .icon > p {
+    margin-top: 5px;
+    font-weight: 200;
+    font-size: 13px;
+  }
+
+  .container-contact-us {
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+  }
+
+  .header-contac-us h1 {
+    padding-top: 40px;
+    font-size: 25px;
+  }
+
+  .header-contac-us p {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  .header-our-packages h1,
+  .header-action h1 {
+    font-size: 30px;
+    margin: 110px 0 75px;
+  }
+
+  .container-wisata {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 3%;
+  }
+
+  .feature-item {
+    margin-bottom: 30px;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+
+  .feature-text p {
+    font-size: 15px;
+    margin-top: -8px;
+  }
+
+  .header-action h1 {
+    margin-top: 15px;
+  }
+
+  .content-action h1 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  .content-action p {
+    width: 80%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  button {
+    padding: 8px 25px;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background-color: #3c3d37;
+  }
+
+  footer {
+    padding: 20px;
+
+  }
+
+  footer img {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+
+  footer h1 {
+    font-size: 10px;
+  }
+
+  footer p {
+    font-size: 8px;
+  }
 }

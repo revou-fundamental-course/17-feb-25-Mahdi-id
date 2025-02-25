@@ -26,7 +26,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   
     // Validasi: cek apakah field kosong
     if (name === "" || email === "" || interested === "") {
-      alert("Semua field harus diisi dengan benar!");
+      alert("Semua field tidak boleh kosong!");
       return; // Hentikan proses jika ada field kosong
     }
   
@@ -40,12 +40,14 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     const konfirmasi = confirm("Apakah Anda yakin ingin mengirim data?");
     if (konfirmasi) {
       // Jika konfirmasi OK, maka tampilkan pesan berhasil
-      alert("Data berhasil dikirim!");
+      alert("Yeyyy, Datamu berhasil dikirim!");
   
       // Refresh halaman setelah data dikirim
       location.reload();
     } else {
       // Jika user batal mengirim, tampilkan pesan pembatalan
-      alert("Pengiriman data dibatalkan.");
+      alert("Yahhh, Pengiriman data dibatalkan :(");
     }
   });
+
+ 
