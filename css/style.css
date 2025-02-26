@@ -3,93 +3,19 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+body,
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -110,7 +36,6 @@ body {
   line-height: 1;
   font-family: poppins, sans-serif;
   overflow-x: hidden;
-
 }
 ol,
 ul {
@@ -145,32 +70,12 @@ table {
   color: #626f47;
   box-sizing: border-box;
   position: fixed;
-  z-index: 10000;
+  z-index: 9;
   box-shadow: 0 5px 30px 0 grey;
 }
 
 .container-logo img {
   width: 50px;
-}
-.slider {
-  position: relative;
-  width: 100%;
-  border-radius: 20px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slides img {
-  width: 100%;
-  height: 480px;
-  flex-shrink: 0;
-  object-fit: cover;
-  object-position: center;
 }
 
 nav > a {
@@ -182,6 +87,12 @@ nav > a {
   font-size: 18px;
   color: #ffffff;
 }
+
+nav > a:hover {
+  background-color: #ffffff;
+  color: #626f47;
+}
+
 .hamburger {
   color: #ffffff;
   cursor: pointer;
@@ -201,18 +112,11 @@ nav > a {
   border-radius: 4px 0 0 4px;
 }
 
-main{
- width: 100%;
- overflow-x: hidden;
- display: flex;
- justify-content: center;
-}
-
 .container-hero {
   margin-bottom: 60px;
 }
 
-.container-main  .container-heroh1 {
+.container-main .container-heroh1 {
   text-align: center;
   margin-top: 140px;
   font-weight: bold;
@@ -236,6 +140,27 @@ main{
 .container-content {
   padding-left: 40px;
   width: 60%;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 480px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .keterangan {
@@ -349,7 +274,7 @@ main{
 
 .form-contact-us label {
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 14px;
   color: #3c3d37;
 }
@@ -414,7 +339,6 @@ main{
 }
 
 .container-wisata {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px 40px;
@@ -496,8 +420,6 @@ footer {
   margin-top: 90px;
   background-image: linear-gradient(#626f47, #3c3d37);
   padding: 60px;
-  width: 100%;
-
   text-align: center;
 }
 
@@ -520,18 +442,17 @@ footer p {
 
 /*Dekstop*/
 @media (max-width: 1024px) {
-
-  .container-main{
-text-align: center;
+  .container-main {
+    text-align: center;
   }
-  
+
   .container-logo img {
     width: 40px;
   }
   nav > a {
     font-size: 14px;
   }
-  .container-main  .container-heroh1 {
+  .container-main .container-heroh1 {
     font-size: 45px;
   }
 
@@ -561,7 +482,6 @@ text-align: center;
   }
   .content-service {
     display: grid;
-    
   }
   .content-benefit > h1 {
     margin-left: 20px;
@@ -573,6 +493,15 @@ text-align: center;
     width: auto;
     margin-bottom: 15px;
     line-height: 18px;
+  }
+
+  .container-contact-us {
+    display: block;
+    text-align: start;
+  }
+
+  .feature-text {
+    text-align: start;
   }
 
   .content-action h1 {
@@ -629,7 +558,7 @@ text-align: center;
     margin: 0;
   }
 
-  .container-main  .container-heroh1 {
+  .container-main .container-heroh1 {
     margin-top: 160px;
     font-size: 40px;
   }
@@ -640,12 +569,22 @@ text-align: center;
   }
 
   .container-content-utama {
-    display: block;
+    flex-wrap: wrap;
     gap: 0;
   }
 
   .container-content {
     padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+
+  .container-content .slider {
+    width: 100%;
+  }
+
+  .content-service {
+    flex-wrap: wrap;
     width: 100%;
   }
 
@@ -655,13 +594,20 @@ text-align: center;
     font-size: 28px;
   }
 
+  .icon {
+    width: 90%;
+  }
+
   .icon img {
     width: 45px;
   }
 
   .container-contact-us {
     width: 100%;
-    display: block;
+  }
+
+  .contact-us {
+    margin: auto;
   }
 
   .content-action {
@@ -723,7 +669,7 @@ text-align: center;
   }
 
   .slides img {
-    height: 300px;
+    max-height: 300px;
   }
 
   .keterangan {
@@ -765,11 +711,8 @@ text-align: center;
 
   .icon {
     margin: 5px 0;
-    padding: 15px 8px;
-    border-radius: 10px;
-    background-color: #626f47;
-    color: white;
     line-height: 18px;
+    max-width: 90%;
   }
 
   .icon img {
@@ -791,7 +734,6 @@ text-align: center;
   .container-contact-us {
     width: 100%;
     padding: 0 3%;
-    display: flex;
   }
 
   .header-contac-us h1 {
@@ -812,7 +754,6 @@ text-align: center;
   }
 
   .container-wisata {
-    width: 100%;
     display: block;
     margin: 0;
     padding: 3%;

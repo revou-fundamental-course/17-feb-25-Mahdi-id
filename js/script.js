@@ -50,8 +50,11 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   }
 });
 
+
+//Responsif navbar untuk tampilan tablet dan mobile menjadi menu(Garis tiga)
 const menuIcon = document.querySelector(".container-navbar");
 const hamburger = document.getElementById("menu");
+
 hamburger.addEventListener("click", () => {
   menuIcon.classList.toggle("active");
 });
