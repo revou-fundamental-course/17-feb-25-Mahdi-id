@@ -109,6 +109,8 @@ section {
 body {
   line-height: 1;
   font-family: poppins, sans-serif;
+  overflow-x: hidden;
+
 }
 ol,
 ul {
@@ -133,12 +135,12 @@ table {
 .container-header {
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  /* width: 100%; */
   padding: 30px 40px;
   display: flex;
   justify-content: space-between;
   background-color: #626f47;
-  justify-content: space-between;
   align-items: center;
   color: #626f47;
   box-sizing: border-box;
@@ -199,11 +201,18 @@ nav > a {
   border-radius: 4px 0 0 4px;
 }
 
+main{
+ width: 100%;
+ overflow-x: hidden;
+ display: flex;
+ justify-content: center;
+}
+
 .container-hero {
   margin-bottom: 60px;
 }
 
-.container-main .container-hero > .container-heroh1 {
+.container-main  .container-heroh1 {
   text-align: center;
   margin-top: 140px;
   font-weight: bold;
@@ -487,6 +496,7 @@ footer {
   margin-top: 90px;
   background-image: linear-gradient(#626f47, #3c3d37);
   padding: 60px;
+  width: 100%;
 
   text-align: center;
 }
@@ -510,13 +520,18 @@ footer p {
 
 /*Dekstop*/
 @media (max-width: 1024px) {
+
+  .container-main{
+text-align: center;
+  }
+  
   .container-logo img {
     width: 40px;
   }
   nav > a {
     font-size: 14px;
   }
-  .container-main .container-hero > .container-heroh1 {
+  .container-main  .container-heroh1 {
     font-size: 45px;
   }
 
@@ -546,6 +561,7 @@ footer p {
   }
   .content-service {
     display: grid;
+    
   }
   .content-benefit > h1 {
     margin-left: 20px;
@@ -613,7 +629,7 @@ footer p {
     margin: 0;
   }
 
-  .container-main .container-hero > .container-heroh1 {
+  .container-main  .container-heroh1 {
     margin-top: 160px;
     font-size: 40px;
   }
@@ -691,7 +707,7 @@ footer p {
     top: 44px;
   }
 
-  .container-main .container-hero > .container-heroh1 {
+  .container-main .container-heroh1 {
     margin-top: 90px;
     font-size: 25px;
   }
